@@ -18,6 +18,8 @@
       const pageno = getPageno();
       const result = await fetch(pageno);
       printContacts(result.contacts);
+      const pagination = getPagination(result);
+      printPagination(pagination);
     })
   </script>
 </head>
