@@ -63,7 +63,7 @@ function printPagination({prev,start,end,next,pageno}){
         <a class="page-link" href="01list.html?pageno=${i}">${i}</a>
       </li>
     `;
-    $p.append(html)
+    $p.append(html);
   }
   if(next>0){
     const html = `
